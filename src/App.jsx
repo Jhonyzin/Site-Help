@@ -7,8 +7,7 @@ export default function App(){
     return(
         <Router>
             <div style={{padding: 20}}>
-
-                <nav>
+                <nav> 
                     <Link to="/login">Login</Link>
                     <Link to="/teste">Teste</Link>
                 </nav>
