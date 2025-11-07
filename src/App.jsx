@@ -7,11 +7,6 @@ export default function App(){
     return(
         <Router>
             <div style={{padding: 20}}>
-                <nav> 
-                    <Link to="/login">Login</Link>
-                    <Link to="/teste">Teste</Link>
-                </nav>
-
                 <Routes>
                     <Route path="/" element={<h1>Página Inicial</h1>} />
                     <Route path="/login" element={<Login/>}/>
