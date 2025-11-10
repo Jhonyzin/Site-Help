@@ -1,0 +1,266 @@
+.paciente-container {
+  min-height: 100vh;
+  background: #1c2c41;
+  padding: 20px;
+  color: white;
+}
+
+.paciente-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 20px;
+  background: #2a3d52;
+  border-radius: 10px;
+}
+
+.perfil-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.perfil-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.perfil-placeholder {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #004aad;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+}
+
+.paciente-header h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.logout-btn {
+  padding: 10px 20px;
+  background: #d32f2f;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.logout-btn:hover {
+  background: #b71c1c;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.menu-item {
+  background: #2a3d52;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.menu-item:hover {
+  transform: translateY(-5px);
+  background: #3a4d62;
+}
+
+.menu-icon {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.menu-item span {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.page-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.page-header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.back-btn {
+  padding: 10px 20px;
+  background: #004aad;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.back-btn:hover {
+  background: #003a8d;
+}
+
+.loading,
+.empty-state {
+  text-align: center;
+  padding: 40px;
+  font-size: 18px;
+  color: #aaa;
+}
+
+.error-message {
+  background: #d32f2f;
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.consultas-list,
+.hospitais-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.consulta-card,
+.hospital-card {
+  background: #2a3d52;
+  border-radius: 10px;
+  padding: 20px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.consulta-card:hover,
+.hospital-card:hover {
+  background: #3a4d62;
+}
+
+.consulta-card {
+  display: flex;
+  position: relative;
+}
+
+.status-bar {
+  width: 5px;
+  border-radius: 5px 0 0 5px;
+  margin-right: 15px;
+}
+
+.consulta-content {
+  flex: 1;
+}
+
+.consulta-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.consulta-header h3 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.status-badge {
+  background: #004aad;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  text-transform: capitalize;
+}
+
+.consulta-header .especialidade {
+  color: #aaa;
+  margin-bottom: 10px;
+}
+
+.consulta-info {
+  display: flex;
+  gap: 20px;
+  color: #aaa;
+  font-size: 14px;
+}
+
+.hospital-card h3 {
+  margin: 0 0 10px 0;
+  font-size: 20px;
+}
+
+.hospital-card p {
+  margin: 5px 0;
+  color: #aaa;
+}
+
+.dados-card,
+.consulta-detalhes {
+  background: #2a3d52;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.dados-item,
+.detalhe-item {
+  padding: 15px 0;
+  border-bottom: 1px solid #3a4d62;
+}
+
+.dados-item:last-child,
+.detalhe-item:last-child {
+  border-bottom: none;
+}
+
+.dados-item strong,
+.detalhe-item strong {
+  display: inline-block;
+  width: 200px;
+  color: #aaa;
+}
+
+.resultado-texto {
+  margin-top: 10px;
+  padding: 15px;
+  background: #1c2c41;
+  border-radius: 5px;
+  white-space: pre-wrap;
+}
+
+.config-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.config-item {
+  background: #2a3d52;
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background 0.3s;
+}
+
+.config-item:hover {
+  background: #3a4d62;
+}
+
