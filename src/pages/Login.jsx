@@ -37,7 +37,7 @@ export default function Login() {
       } else {
         setErro(result.message || 'Erro ao fazer login');
       }
-    } catch (error) {
+    } catch (erro) {
       setErro('Erro ao fazer login. Tente novamente.');
     } finally {
       setLoading(false);
@@ -48,7 +48,8 @@ export default function Login() {
     <div className="login-container">
       <div className="login-box">
         <div className="login-header">
-          <h1>Help Mais</h1>
+          <h1>Help</h1>
+          <h1>+</h1>
         </div>
 
         <div className="tipo-usuario-buttons">
