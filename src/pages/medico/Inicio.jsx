@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../../context/AuthContext';
-import { CalendarIcon, UsersIcon, PlusIcon, UserIcon, ActivityIcon, CheckCircleIcon, SettingsIcon } from '../../components/Icons';
+import { CalendarIcon, UsersIcon, PlusIcon, UserIcon, ActivityIcon, CheckCircleIcon, SettingsIcon } from '../../components/icons.jsx';
 import './Medico.css';
 
 export default function InicioMedico() {
