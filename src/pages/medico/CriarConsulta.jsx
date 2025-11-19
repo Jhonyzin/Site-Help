@@ -156,6 +156,7 @@ export default function CriarConsultaMedico() {
         <div className="form-group">
           <label>Data e Horário (DD/MM/YYYY HH:MM)</label>
           <input
+            className='input-consulta'
             type="text"
             placeholder="DD/MM/YYYY HH:MM"
             value={data_hora}
@@ -168,6 +169,7 @@ export default function CriarConsultaMedico() {
         <div className="form-group">
           <label>Valor da Consulta</label>
           <input
+           className='input-consulta'
             type="number"
             step="0.01"
             placeholder="0.00"
@@ -179,6 +181,7 @@ export default function CriarConsultaMedico() {
 
         <div className="form-group">
           <label>Status</label>
+          
           <div className="status-buttons">
             <button
               type="button"
