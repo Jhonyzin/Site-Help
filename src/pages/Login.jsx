@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { formatarCPF } from '../utils/validacao';
-import { HeartIcon } from '../components/Icons.jsx';
+import { HeartIcon } from "../components/Icons.jsx";
 import './Login.css';
 
 export default function Login() {
@@ -39,7 +39,7 @@ export default function Login() {
         setErro(result.message || 'Erro ao fazer login');
       }
     } catch (erro) {
-      setErro('Erro ao fazer login. Tente novamente.');
+      setErro('Erro ao fazer login. Tente novamente. ', erro);
     } finally {
       setLoading(false);
     }
