@@ -26,19 +26,22 @@ export const AuthProvider = ({ children }) => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [token]);
 
-  const loadUser = async () => {
+  const loadUser = async (forcedType) => {
     try {
       setLoading(true);
-      const endpoint = userType === 'medico' ? '/medico' : '/usuario';
+
+      const tipo = forcedType || userType;
+      const endpoint = tipo === 'medico' ? '/medico' : '/usuario';
+
       const response = await api.get(endpoint);
       setUser(response.data);
     } catch (error) {
-      console.error('Erro ao carregar usuário:', error);
       logout();
     } finally {
       setLoading(false);
     }
   };
+
 
   const login = async (credentials, type) => {
     try {
@@ -51,7 +54,7 @@ export const AuthProvider = ({ children }) => {
       localStorage.setItem('token', newToken);
       localStorage.setItem('userType', type);
       
-      await loadUser();
+      await loadUser(type);
       return { success: true };
     } catch (error) {
       return {

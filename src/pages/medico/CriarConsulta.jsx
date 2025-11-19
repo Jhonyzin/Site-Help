@@ -91,10 +91,21 @@ export default function CriarConsultaMedico() {
         valor: parseFloat(valor),
       });
 
-      if (response.data.success) {
-        alert('Consulta criada com sucesso!');
-        navigate('/medico/inicio');
-      }
+        if (response.data.success) {
+
+          const consultaId =
+            response.data.id ||
+            response.data.consulta_id ||
+            response.data.data?.id ||
+            response.data.data?.consulta_id;
+
+          if (!consultaId) {
+            alert("Consulta criada, mas o servidor não enviou o ID!");
+            return;
+          }
+
+          navigate(`/medico/consulta/${consultaId}`);
+        }
     } catch (error) {
       console.error('Erro ao criar consulta:', error);
       setErro('Não foi possível criar a consulta');
@@ -202,4 +213,3 @@ export default function CriarConsultaMedico() {
     </div>
   );
 }
-

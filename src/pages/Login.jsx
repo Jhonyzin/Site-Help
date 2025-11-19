@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { formatarCPF } from '../utils/validacao';
+import { HeartIcon } from '../components/Icons';
 import './Login.css';
 
 export default function Login() {
@@ -48,9 +49,15 @@ export default function Login() {
     <div className="login-container">
       <div className="login-box">
         <div className="login-header">
-          <h1>Help</h1>
-          <h1>+</h1>
+          <div className="logo-icon">
+            <HeartIcon size={48} color="#e63946" />
+          </div>
+          <div className="logo-text">
+            <h1>Help<span className="plus">+</span></h1>
+            <p className="subtitle">Sistema de Saúde</p>
+          </div>
         </div>
+
 
         <div className="tipo-usuario-buttons">
           <button

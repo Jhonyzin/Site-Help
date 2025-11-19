@@ -113,4 +113,3 @@ Este site utiliza o backend hospedado no Render:
 ### Erro: "Token inválido"
 - Faça logout e login novamente
 - Verifique se o token está sendo salvo corretamente no localStorage
-que isso meu amgip

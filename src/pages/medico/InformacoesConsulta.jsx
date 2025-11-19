@@ -62,6 +62,10 @@ export default function InformacoesConsultaMedico() {
   return (
     <div className="medico-container">
       <div className="page-header">
+
+      
+
+
         <button className="back-btn" onClick={() => navigate('/medico/consultas')}>
           ← Voltar
         </button>
@@ -87,10 +91,13 @@ export default function InformacoesConsultaMedico() {
         <div className="form-group" style={{ marginTop: '30px' }}>
           <label>Resultado da Consulta</label>
           <textarea
+            className='resultado-textarea'
             value={resultado}
             onChange={(e) => setResultado(e.target.value)}
             placeholder="Digite o resultado da consulta..."
           />
+
+
           <button
             type="button"
             onClick={salvarResultado}
@@ -100,6 +107,9 @@ export default function InformacoesConsultaMedico() {
             {salvando ? 'Salvando...' : 'Salvar Resultado'}
           </button>
         </div>
+
+
+
       </div>
     </div>
   );
