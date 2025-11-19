@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { formatarCPF } from '../utils/validacao';
-import { EyeIcon, EyeOffIcon, HeartIcon } from "../components/Icons.jsx";
+import { EyeIcon, EyeOffIcon, HeartIcon } from "../components/icons.jsx";
 import './Login.css';
 
 export default function Login() {
