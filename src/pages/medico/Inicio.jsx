@@ -164,7 +164,7 @@ export default function InicioMedico() {
             <CalendarIcon size={24} color="#e63946" />
             <span className="stats-card-title">Total de Consultas</span>
           </div>
-          <p className="stats-card-value">324</p>
+          <p className="stats-card-value">2</p>
         </div>
 
         <div className="stats-card">
@@ -172,7 +172,7 @@ export default function InicioMedico() {
             <ActivityIcon size={24} color="#f77f00" />
             <span className="stats-card-title">Consultas Hoje</span>
           </div>
-          <p className="stats-card-value">teste</p>
+          <p className="stats-card-value">2</p>
         </div>
 
         <div className="stats-card">
@@ -180,7 +180,7 @@ export default function InicioMedico() {
             <CheckCircleIcon size={24} color="#06d6a0" />
             <span className="stats-card-title">Concluídas</span>
           </div>
-          <p className="stats-card-value">32</p>
+          <p className="stats-card-value">0</p>
         </div>
       </div>
 
