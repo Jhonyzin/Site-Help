@@ -113,3 +113,17 @@ Este site utiliza o backend hospedado no Render:
 ### Erro: "Token inválido"
 - Faça logout e login novamente
 - Verifique se o token está sendo salvo corretamente no localStorage
+
+### Créditos:
+- João Paulo -  Desenvolvedor FrontEnd
+  - [GitHub - Jhonyzin](https://github.com/Jhonyzin)
+  - [Linkedin](https://www.linkedin.com/in/joão-paulo-santos-botelho-00a659270/)
+- Tales Coutinho - Desenvolvedor BackEnd
+  - [GitHub - TalesCouti](https://github.com/TalesCouti)
+  - [Linkedin](https://www.linkedin.com/in/talescoutinho/)
+- Pedro Henrique - Redator Técnico
+- Luiz Fernando - Designer
+  - [Linkedin](https://www.linkedin.com/in/luiz-fernando-mendes-nobre-91669a304/)
+- Juan Sobral - Assistente de Design
+  - [GitHub - T0KAG3](https://github.com/T0KAG3)
+  - [Linkedin](https://www.linkedin.com/in/juan-sobral-costa-2242a0352/)
