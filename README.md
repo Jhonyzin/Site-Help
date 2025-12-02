@@ -114,7 +114,7 @@ Este site utiliza o backend hospedado no Render:
 - Faça logout e login novamente
 - Verifique se o token está sendo salvo corretamente no localStorage
 
-### Créditos:
+### Desenvolvimento:
 - João Paulo -  Desenvolvedor FrontEnd
   - [GitHub - Jhonyzin](https://github.com/Jhonyzin)
   - [Linkedin](https://www.linkedin.com/in/joão-paulo-santos-botelho-00a659270/)
